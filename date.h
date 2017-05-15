@@ -18,7 +18,7 @@ public:
 	} //判断是否为闰年
 	void show() const;
 	//计算两个日期相差天数
-	int distance(const Date& date) const{
+	int operator -(const Date& date) const{
 		return totalDays-date.totalDays;
 	}
 };

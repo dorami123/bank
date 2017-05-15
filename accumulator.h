@@ -11,7 +11,7 @@ public:
 	Accumulator(const Date& date, double value)
 		:lastDate(date),value(value),sum(0){}
 	double getSum(const Date& date)const{            //计算按日期累加值
-		return sum+value*date.distance(lastDate);
+		return sum+value*(date-lastDate);
 	}
 	void change(const Date& date,double value){      //按一次存取款变更修改累加值和value
 		sum=getSum(date);
