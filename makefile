@@ -1,6 +1,6 @@
 main: bank.o account.o date.o
 	g++ bank.o account.o date.o -o bank
-bank.o: bank.cpp account.h
+bank.o: bank.cpp account.h array.h
 	g++ -c bank.cpp
 account.o: account.cpp account.h accumulator.h
 	g++ -c account.cpp
